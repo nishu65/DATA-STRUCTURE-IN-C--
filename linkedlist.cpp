@@ -1,19 +1,19 @@
 #include <iostream>
 using namespace  std;
-class lin{
-struct lis{
-    int data ;
-    struct lis *p;
-}node;
-public: 
+class node{
+public:
+int data;
+node*link;
 
-}
+//node(){
+
+//}
+}; 
 int main() {
-    int *head ;
-    head =NULL;
-    
-    
-
-
+    node *head;;
+    node a;
+    head=&data;
+    a.data=5;
+    cout<<a.data;
 
 }
