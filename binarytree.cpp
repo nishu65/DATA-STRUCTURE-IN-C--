@@ -53,6 +53,7 @@ private:
     }
 };
 
+
 int main() {
     BinaryTree tree;
     tree.insert(50);
