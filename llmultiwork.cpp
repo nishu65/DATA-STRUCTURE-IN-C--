@@ -57,6 +57,24 @@ class linked_list{
         head=head->next;
         delete temp;
     }
+    void delete_at(int position){
+        node*temp=head;
+        for(int i=0;i<position-1;i++){
+            temp=temp->next;
+        }
+        node*deletenode=temp->next;
+        temp->next=deletenode->next;
+        delete deletenode;
+    }
+    void delete_at_end(){
+        node*temp=head;
+        while(temp->next->next!=nullptr){
+            temp=temp->next;
+        }
+        node*deletenode=temp->next;
+        temp->next=nullptr;
+        delete deletenode;
+    }
     ~linked_list(){
         node * temp=head;
         while(temp!=nullptr){
