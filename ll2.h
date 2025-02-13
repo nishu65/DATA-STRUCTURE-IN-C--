@@ -1,5 +1,5 @@
-#include <iostream>
 
+namespace linked{
 class Node {
 public:
     int data;
@@ -43,12 +43,4 @@ public:
     }
 };
 
-int main() {
-    LinkedList list;
-    list.insertAtEnd(1);
-    list.insertAtEnd(2);
-    list.insertAtEnd(3);
-    list.display();
-
-    return 0;
 }
